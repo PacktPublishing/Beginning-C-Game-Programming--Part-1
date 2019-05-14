@@ -1,0 +1,33 @@
+// Create a vertex array
+VertexArray background;
+
+// What primitive type are we using
+background.setPrimitiveType(Quads);
+
+// Set the size of the vertex array
+background.resize(10 * 10 * 4);
+
+// Position each vertex in the current quad
+background[0].position = Vector2f(0, 0);
+background[1].position = Vector2f(49, 0);
+background[2].position = Vector2f(49,49);
+background[3].position = Vector2f(0, 49);
+
+// Set the texture coordinates of each vertex
+background[0].texCoords = Vector2f(0, 0);
+background[1].texCoords = Vector2f(49, 0);
+background[2].texCoords = Vector2f(49, 49);
+background[3].texCoords = Vector2f(0, 49);
+
+// Set the texture coordinates of each vertex
+background[0].texCoords = Vector2f(0, 50);
+background[1].texCoords = Vector2f(49, 50);
+background[2].texCoords = Vector2f(49, 99);
+background[3].texCoords = Vector2f(0, 99);
+
+// Load the texture for our background vertex array
+Texture textureBackground;
+textureBackground.loadFromFile("graphics/background_sheet.png");
+
+// Draw the background
+window.draw(background, &textureBackground);

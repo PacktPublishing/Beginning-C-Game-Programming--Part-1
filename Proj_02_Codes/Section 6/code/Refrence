@@ -1,0 +1,36 @@
+void add(int n1, int n2, int a);
+void referenceAdd(int n1, int n2, int& a);
+
+int main()
+{
+ int number1 = 2;
+ int number2 = 2;
+ int answer = 0;
+ add(number1, number2, answer);
+ // answer still equals zero because it is passed as a copy
+ // Nothing happens to answer in the scope of main
+ referenceAdd(number1, number2, answer);
+ // Now answer equals 4 because it was passed by reference
+ // When the referenceAdd funtion did this:
+ // answer = num1 + num 2;
+ // It is actually changing the value stored by a
+ return 0;
+}
+
+// Here are the two function definitions
+// They are exactly the same except that
+// the second passes a reference to a
+add(int n1, int n2, int a)
+{
+ a = n1 + n2;
+ // a now equals 4
+ // But when the function returns a is lost forever
+}
+
+referenceAdd(int n1, int n2, int& a)
+{
+ a = n1 + n2;
+ // a now equals 4
+ // But a is a reference!
+ // So it is actually answer, back in main, that equals 4
+}
