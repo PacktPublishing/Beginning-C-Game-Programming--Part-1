@@ -28,3 +28,7 @@ C++
 * [C++17 STL Solutions [Video]](https://prod.packtpub.com/in/application-development/c17-stl-solutions-video)
 
 * [C++ Programming By Example [Video]](https://prod.packtpub.com/in/application-development/c-programming-example-video)
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781787280397">https://packt.link/free-ebook/9781787280397 </a> </p>
